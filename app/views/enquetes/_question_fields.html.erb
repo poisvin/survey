@@ -1,0 +1,6 @@
+<p>
+  <b><%= f.label :content, "Question" %></b><br />
+  <%= f.select(:type, @questions) %><br/>
+ 	<%= f.text_area :content, :rows => 3 %><br/>
+  <%= f.link_to_remove "Remove this question" %>
+</p>

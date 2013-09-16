@@ -14,7 +14,29 @@ Survey::Application.configure do
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send
-  config.action_mailer.raise_delivery_errors = false
+  # config.action_mailer.raise_delivery_errors = false
+  HOST = "http://localhost:3000"
+  
+  #config.action_mailer.smtp_settings = {
+  #  address: "relay.jangosmtp.net",
+  #  port: 2525,
+  # domain: "localhost.localdomain",
+  #  authentication: "plain",
+  #  user_name: "softwaydev",
+  #  password: "909700FT"
+  # }
+
+config.action_mailer.smtp_settings = {
+    :address              => "smtp.gmail.com",
+    :port                 => 587,
+    :domain               => "localhost.localdomain",
+    :user_name            => "tests.vrk@gmail.com",
+    :password             => "vinu1234",
+    :authentication       => 'plain',
+    :enable_starttls_auto => true
+  }
+
+  config.action_mailer.raise_delivery_errors = true
 
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
@@ -35,3 +57,4 @@ Survey::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = true
 end
+  

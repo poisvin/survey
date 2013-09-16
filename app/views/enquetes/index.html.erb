@@ -1,0 +1,26 @@
+<h1>Surveys</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th>Available surveys</th>
+    <th>Description</th>
+    <th>Actions</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @surveys.each do |survey| %>
+  <tr>
+    <td><%= survey.id %></td>
+    <td><%=link_to survey.title, enquete_path(survey) %></td>
+    <td><%= truncate(survey.description, :length => 40, :separator => '...') %></td>
+    <!-- <td><%#= link_to 'Edit', edit_enquete_path(survey) %></td> -->
+    <!-- <td><%#= link_to 'Destroy', survey, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Create Survey', new_enquete_path %>

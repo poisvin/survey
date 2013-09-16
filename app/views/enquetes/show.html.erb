@@ -1,0 +1,19 @@
+<u><h1><%= @survey.title %></h1></u>
+
+<b>Description</b><br/>
+<p> <%= @survey.description %></p>
+
+<b>Questions</b>
+<ul>
+  <% @survey.questions.each do |question| %>
+    <li><%= question.content %></li>
+    <table>
+     <% question.answers.each do |answer| %>
+		    <tr>
+		      <td><%= answer.user.user_name %></td>
+		      <td><%= answer.content %></td>
+		    </tr>
+	    <% end%>
+	    </table>
+  <% end %>
+</ul>

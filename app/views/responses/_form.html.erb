@@ -1,0 +1,49 @@
+<p>
+  <b>Name:</b>
+  <%= @survey.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @survey.description %>
+</p>
+
+<%= nested_form_for @response, :url => enquete_responses_path do |f| %>
+  <% if @response.errors.any? %>
+    <div>
+      <h2><%= pluralize(@response.errors.count, "error") %> prohibited this answer from being saved:</h2>
+
+      <ul>
+      <% @response.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <%= f.hidden_field :enquete_id, :value => @survey.id %>
+  <div>
+    <b><p>Questions</p></b>
+
+    <% i = 0 %>
+    <%= f.fields_for :answers do |a| %>
+    
+      <div>
+        <%= @survey.questions[i].content %>:
+        <% if @survey.questions[i].type == 'NumericQuestion' %>
+          <%= a.text_field :content, :class => "numeric_field" %>
+        <% elsif @survey.questions[i].type == 'DateQuestion' %>
+          <%= a.text_field :content, :class => 'date_field' %>
+        <% else %>
+          <%= a.text_area :content %>
+        <% end %>
+        <%= a.hidden_field :question_id, :value => @survey.questions[i].id %>
+      </div>
+      <% i+= 1 %>
+    <% end %>
+  </div>
+
+  <div>
+    <%= f.submit "Submit answers"%>
+  </div>
+<% end %>

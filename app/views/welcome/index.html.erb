@@ -1,0 +1,7 @@
+<h1>Surveys</h1>
+	<% @surveys.each do |survey| %>
+		<li>
+			<div><%=link_to survey.title, new_enquete_response_path(survey), :style => "font-size:20px; text-decoration:none;" %></div>
+			<div><p><%= truncate(survey.description, :length => 50, :separator => '...')%></p></div>
+		</li>
+	<% end %>

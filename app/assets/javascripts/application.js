@@ -12,4 +12,20 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery_nested_form
 //= require_tree .
+
+jQuery(document).ready(function($){
+	$('.date_field').datepicker({
+		dateFormat: 'yy/mm/dd',
+		changeMonth: true,
+		changeYear: true,
+		defaultDate: +1,
+		showOn: 'both',
+		duration: 'fast'
+	});
+
+	$('.numeric_field').keyup(function($){
+		this.value = this.value.replace(/[^0-9\.]/g,'');
+	})
+});

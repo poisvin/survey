@@ -1,0 +1,19 @@
+<h2><%=  @response.enquete.title %></h2>
+<div>
+	<p><%=  @response.enquete.description %></p>
+</div>
+
+<table>
+	<tr>
+		<th>Question</th>
+		<th> Answers</th>
+	</tr>
+	<%  @response.answers.each do  |r| %>
+		<tr>
+			<td><%= r.question.content %></td>
+			<td><%= r.content %></td>
+		</tr>
+	<% end %>
+</table>
+
+<%= link_to 'Back', root_path %>
