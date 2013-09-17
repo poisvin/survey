@@ -13,6 +13,19 @@ Survey::Application.configure do
 
   # Log error messages when you accidentally call methods on nil
   config.whiny_nils = true
+  HOST = "http://localhost:3000"
+
+  config.action_mailer.smtp_settings = {
+    :address              => "smtp.gmail.com",
+    :port                 => 587,
+    :domain               => "localhost.localdomain",
+    :user_name            => "tests.vrk@gmail.com",
+    :password             => "vinu1234",
+    :authentication       => 'plain',
+    :enable_starttls_auto => true
+  }
+
+  config.action_mailer.raise_delivery_errors = true
 
   # Show full error reports and disable caching
   config.consider_all_requests_local       = true

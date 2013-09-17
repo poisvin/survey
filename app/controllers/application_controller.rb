@@ -18,10 +18,14 @@ private
   end
 
   def admin_login
-    unless current_user && current_user.admin?
+    unless is_admin?
       flash[:notice] = "Access restricted"
       redirect_to root_url and return false
     end
+  end
+
+  def is_admin?
+    current_user && current_user.admin?
   end
 
 end

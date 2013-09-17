@@ -1,0 +1,795 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 86ms (Views: 38.3ms | ActiveRecord: 27.8ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by SessionsController#new as HTML
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by UsersController#new as HTML
+Completed 200 OK in 55ms (Views: 1.4ms | ActiveRecord: 30.5ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"user_name"=>"kk", "email"=>"kk@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 0ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"user_name"=>"kk", "email"=>"kk@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 0ms
+  [1m[35m (0.0ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (31.8ms)[0m  SELECT COUNT(*) FROM `users` 
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"user_name"=>"kk", "email"=>"kk@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 0ms
+  [1m[36m (18.7ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 69ms (Views: 35.5ms | ActiveRecord: 20.1ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (18.6ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 249ms
+  [1m[36m (0.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `users` [0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 120ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by SessionsController#new as HTML
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 43ms (Views: 34.4ms | ActiveRecord: 1.1ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.4ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 155ms
+  [1m[36m (0.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 111ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `users` 
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 111ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by SessionsController#new as HTML
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 36ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by UsersController#new as HTML
+Completed 200 OK in 10ms (Views: 1.3ms | ActiveRecord: 1.6ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.5ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 180ms
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 112ms
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `users` 
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 111ms
+  [1m[35m (0.0ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 42ms (Views: 34.5ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.6ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1[0m
+  [1m[35mSQL (78.0ms)[0m  INSERT INTO `users` (`admin`, `created_at`, `email`, `password_hash`, `password_salt`, `updated_at`) VALUES (NULL, '2013-09-17 12:13:29', 'helloworld@yopmail.com', '$2a$10$5TlQBImhTWaO6u0WFt7/t.I.v2zDx0r7rcQ7MBQSA.4RLUDYQZzbC', '$2a$10$5TlQBImhTWaO6u0WFt7/t.', '2013-09-17 12:13:29')
+  [1m[36m (0.6ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 300ms
+  [1m[35m (48.6ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `users` (`admin`, `created_at`, `email`, `password_hash`, `password_salt`, `updated_at`) VALUES (NULL, '2013-09-17 12:13:29', 'helloworld@yopmail.com', '$2a$10$a6YjCnHMDwR8fkTz.w1hc.uwlJX5ArElRKmhx0uRpWyEnU3ThFTkS', '$2a$10$a6YjCnHMDwR8fkTz.w1hc.', '2013-09-17 12:13:29')
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 119ms
+  [1m[35m (27.3ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `users` 
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `users` (`admin`, `created_at`, `email`, `password_hash`, `password_salt`, `updated_at`) VALUES (NULL, '2013-09-17 12:13:30', 'helloworld@yopmail.com', '$2a$10$ToIc3QPq9BrS8AMSpbXY7.LbCIvcyAzS5qybzjafNAu.J4NJlUegq', '$2a$10$ToIc3QPq9BrS8AMSpbXY7.', '2013-09-17 12:13:30')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 123ms
+  [1m[36m (28.9ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by SessionsController#new as HTML
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 42ms (Views: 34.2ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.6ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 48ms (Views: 0.8ms | ActiveRecord: 1.8ms)
+  [1m[36m (0.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`admin`, `created_at`, `email`, `password_hash`, `password_salt`, `updated_at`) VALUES (NULL, '2013-09-17 12:19:16', 'helloworld@yopmail.com', '$2a$10$WK.olBzoRWOo8Icvpsdoc.QctkebDY6.3ZBXs6yIGjiekMLfnTwou', '$2a$10$WK.olBzoRWOo8Icvpsdoc.', '2013-09-17 12:19:16')[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Completed 500 Internal Server Error in 118ms
+  [1m[36m (32.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `users` [0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO `users` (`admin`, `created_at`, `email`, `password_hash`, `password_salt`, `updated_at`) VALUES (NULL, '2013-09-17 12:19:16', 'helloworld@yopmail.com', '$2a$10$eWUtwBrJTD991BenMsXKReAMxBC8GR0uyobrsaaPUFMSaYOkMh.zG', '$2a$10$eWUtwBrJTD991BenMsXKRe', '2013-09-17 12:19:16')
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Completed 500 Internal Server Error in 116ms
+  [1m[35m (23.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by SessionsController#new as HTML
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 38ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by UsersController#new as HTML
+Completed 200 OK in 10ms (Views: 1.3ms | ActiveRecord: 1.6ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (1.5ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 76ms (Views: 0.8ms | ActiveRecord: 1.7ms)
+  [1m[36m (0.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `users` (`admin`, `created_at`, `email`, `password_hash`, `password_salt`, `updated_at`) VALUES (NULL, '2013-09-17 12:24:24', 'helloworld@yopmail.com', '$2a$10$QqmOn6IdxVaPUeYeGNMPzuBblxzB1b6YhYacU6FHy1kew/xLx49Za', '$2a$10$QqmOn6IdxVaPUeYeGNMPzu', '2013-09-17 12:24:24')[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+Sent mail to helloworld@yopmail.com (70ms)
+Date: Tue, 17 Sep 2013 17:54:24 +0530
+from: Survey Registration
+To: helloworld@yopmail.com
+Message-ID: <523849f86515b_2eb34f1c35a282f8@SSD-16-4F-021.mail>
+Subject: Email Registration
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1>Welcome to Survey</h1>
+    <p>
+      Please click the link below to register: http://localhost:3000/verification/iIkZeKegtUh1rxpUz2Nqh69wiZA.
+    </p>
+  </body>
+</html>
+Redirected to http://test.host/
+Completed 302 Found in 323ms (ActiveRecord: 0.7ms)
+  [1m[36m (27.9ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `users` [0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `users` (`admin`, `created_at`, `email`, `password_hash`, `password_salt`, `updated_at`) VALUES (NULL, '2013-09-17 12:24:24', 'helloworld@yopmail.com', '$2a$10$hsRpjF1pmB3Wl62Be5nJOe7xIMzglCkNs8C8nszw0dCamzvZOiETq', '$2a$10$hsRpjF1pmB3Wl62Be5nJOe', '2013-09-17 12:24:24')
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+
+Sent mail to helloworld@yopmail.com (3ms)
+Date: Tue, 17 Sep 2013 17:54:24 +0530
+from: Survey Registration
+To: helloworld@yopmail.com
+Message-ID: <523849f89a263_2eb34f1c35a283ba@SSD-16-4F-021.mail>
+Subject: Email Registration
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1>Welcome to Survey</h1>
+    <p>
+      Please click the link below to register: http://localhost:3000/verification/KxRe143MpUBM4ZrIpJyyThisCxw.
+    </p>
+  </body>
+</html>
+Redirected to http://test.host/
+Completed 302 Found in 120ms (ActiveRecord: 0.9ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `users` 
+  [1m[36m (26.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mEnquete Load (5.8ms)[0m  SELECT `enquetes`.* FROM `enquetes` WHERE `enquetes`.`published` = 1
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 104ms (Views: 33.7ms | ActiveRecord: 25.4ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+Processing by SessionsController#new as HTML
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+Processing by UsersController#new as HTML
+Completed 200 OK in 9ms (Views: 1.3ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+Completed 200 OK in 47ms (Views: 0.8ms | ActiveRecord: 0.7ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `users` (`admin`, `created_at`, `email`, `password_hash`, `password_salt`, `updated_at`) VALUES (NULL, '2013-09-17 12:30:31', 'helloworld@yopmail.com', '$2a$10$TgQOpz28WjyEuY2FEfci9.R3BTOsKkDuEd/5tN4C5ddYAk1ndJXIy', '$2a$10$TgQOpz28WjyEuY2FEfci9.', '2013-09-17 12:30:31')
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+
+Sent mail to helloworld@yopmail.com (39ms)
+Date: Tue, 17 Sep 2013 18:00:31 +0530
+from: Survey Registration
+To: helloworld@yopmail.com
+Message-ID: <52384b67cbe1f_2f0d4168b5a20721@SSD-16-4F-021.mail>
+Subject: Email Registration
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1>Welcome to Survey</h1>
+    <p>
+      Please click the link below to register: http://localhost:3000/verification/21lxzK5ZDzN_9WfVaePSMKOzlmM.
+    </p>
+  </body>
+</html>
+Redirected to http://test.host/
+Completed 302 Found in 232ms (ActiveRecord: 0.4ms)
+  [1m[35m (14.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `users` 
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO `users` (`admin`, `created_at`, `email`, `password_hash`, `password_salt`, `updated_at`) VALUES (NULL, '2013-09-17 12:30:32', 'helloworld@yopmail.com', '$2a$10$HeFxjtbmwLCHmsXoiWjl4.okRop6z3HYhEWI8iPp3D2SUqIcl2rtO', '$2a$10$HeFxjtbmwLCHmsXoiWjl4.', '2013-09-17 12:30:32')[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+Sent mail to helloworld@yopmail.com (3ms)
+Date: Tue, 17 Sep 2013 18:00:32 +0530
+from: Survey Registration
+To: helloworld@yopmail.com
+Message-ID: <52384b685950_2f0d4168b5a20882@SSD-16-4F-021.mail>
+Subject: Email Registration
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1>Welcome to Survey</h1>
+    <p>
+      Please click the link below to register: http://localhost:3000/verification/iKlPuZFNM9vQpLyT4DSyz6wwimg.
+    </p>
+  </body>
+</html>
+Redirected to http://test.host/
+Completed 302 Found in 125ms (ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `users` [0m
+  [1m[35m (26.6ms)[0m  ROLLBACK
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (25.3ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered users/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 123ms (Views: 33.9ms | ActiveRecord: 27.3ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `users` [0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `users` (`admin`, `created_at`, `email`, `password_hash`, `password_salt`, `registration_token`, `updated_at`, `verified`) VALUES (NULL, '2013-09-17 13:53:51', 'helloworld@yopmail.com', '$2a$10$uyCo2wZISE/.lSYdz/b6geAlhdN7RfQ8.MGb/ML6fZycHR0369JrK', '$2a$10$uyCo2wZISE/.lSYdz/b6ge', 'aEgdu8-zelVJSBe7kK4TTx-NvZQ', '2013-09-17 13:53:51', NULL)
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+
+Sent mail to helloworld@yopmail.com (39ms)
+Date: Tue, 17 Sep 2013 19:23:51 +0530
+from: Survey Registration
+To: helloworld@yopmail.com
+Message-ID: <52385eef7ec43_c2a42f8b5a580eb@SSD-16-4F-021.mail>
+Subject: Email Registration
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1>Welcome to Survey</h1>
+    <p>
+      Please click the link below to register: http://localhost:3000/verification/aEgdu8-zelVJSBe7kK4TTx-NvZQ.
+    </p>
+  </body>
+</html>
+Redirected to http://test.host/
+Completed 302 Found in 232ms (ActiveRecord: 0.6ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `users` 
+  [1m[36m (28.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `users` (`admin`, `created_at`, `email`, `password_hash`, `password_salt`, `registration_token`, `updated_at`, `verified`) VALUES (NULL, '2013-09-17 13:53:51', 'helloworld@yopmail.com', '$2a$10$eyNTJAR5PiUqh1PFhmd1ROW6tadekXTVKXEol0AZy1lTbVyraxOk6', '$2a$10$eyNTJAR5PiUqh1PFhmd1RO', '5DSTs4PWOdybzIJ15N_VhFXJS3o', '2013-09-17 13:53:51', NULL)[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+Sent mail to helloworld@yopmail.com (3ms)
+Date: Tue, 17 Sep 2013 19:23:51 +0530
+from: Survey Registration
+To: helloworld@yopmail.com
+Message-ID: <52385eefacef0_c2a42f8b5a58168@SSD-16-4F-021.mail>
+Subject: Email Registration
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1>Welcome to Survey</h1>
+    <p>
+      Please click the link below to register: http://localhost:3000/verification/5DSTs4PWOdybzIJ15N_VhFXJS3o.
+    </p>
+  </body>
+</html>
+Redirected to http://test.host/
+Completed 302 Found in 126ms (ActiveRecord: 1.1ms)
+  [1m[36m (27.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by UsersController#new as HTML
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by SessionsController#new as HTML
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by SessionsController#destroy as HTML
+Redirected to http://test.host/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `users` (`admin`, `created_at`, `email`, `password_hash`, `password_salt`, `registration_token`, `updated_at`, `verified`) VALUES (NULL, '2013-09-17 13:53:51', 'helloworld@yopmail.com', '$2a$10$KPBY.GB.eXleQScMQ2riy.U3ItdqFk7Zm/Gz0jUkVXWgBLaT8svGi', '$2a$10$KPBY.GB.eXleQScMQ2riy.', 'w1i5WNre90MDuQ3HFewBnlACiXo', '2013-09-17 13:53:51', NULL)[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#verification as HTML
+  Parameters: {"email_token"=>"aaaaaaaaaa"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`registration_token` = 'aaaaaaaaaa' LIMIT 1[0m
+Redirected to http://test.host/sign_up
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+  [1m[35m (25.6ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `users` (`admin`, `created_at`, `email`, `password_hash`, `password_salt`, `registration_token`, `updated_at`, `verified`) VALUES (NULL, '2013-09-17 13:53:52', 'helloworld@yopmail.com', '$2a$10$oVmmZnX1aybQU2Z0b4pyQe6X450353fWomTb5Ymsg/t2aeqOFJ9JC', '$2a$10$oVmmZnX1aybQU2Z0b4pyQe', 'TLfRZHCOIYE1tfyzs_04uMplDPg', '2013-09-17 13:53:52', NULL)
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (50.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mEnquete Load (0.3ms)[0m  SELECT `enquetes`.* FROM `enquetes` WHERE `enquetes`.`published` = 1
+Completed 200 OK in 5ms (Views: 1.3ms | ActiveRecord: 1.8ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (25.0ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered users/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 115ms (Views: 33.8ms | ActiveRecord: 25.9ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `users` [0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `users` (`admin`, `created_at`, `email`, `password_hash`, `password_salt`, `registration_token`, `updated_at`, `verified`) VALUES (NULL, '2013-09-17 13:54:58', 'helloworld@yopmail.com', '$2a$10$0ISQL6FDoDG9eHy35SsrcOgT4lyIzevIq4R4tpb6YuX7HrHBOT99i', '$2a$10$0ISQL6FDoDG9eHy35SsrcO', 'J97wE_Stn7GrOSm65QKUI9y7WCs', '2013-09-17 13:54:58', NULL)
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+
+Sent mail to helloworld@yopmail.com (42ms)
+Date: Tue, 17 Sep 2013 19:24:58 +0530
+from: Survey Registration
+To: helloworld@yopmail.com
+Message-ID: <52385f324a623_c4844e3b72190d4@SSD-16-4F-021.mail>
+Subject: Email Registration
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1>Welcome to Survey</h1>
+    <p>
+      Please click the link below to register: http://localhost:3000/verification/J97wE_Stn7GrOSm65QKUI9y7WCs.
+    </p>
+  </body>
+</html>
+Redirected to http://test.host/
+Completed 302 Found in 242ms (ActiveRecord: 0.6ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `users` 
+  [1m[36m (33.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `users` (`admin`, `created_at`, `email`, `password_hash`, `password_salt`, `registration_token`, `updated_at`, `verified`) VALUES (NULL, '2013-09-17 13:54:58', 'helloworld@yopmail.com', '$2a$10$VGMYjx9kZ6HiYYcZOyebSOeu79y8zUvc5ZSn54WW.nUwGGrpeePo2', '$2a$10$VGMYjx9kZ6HiYYcZOyebSO', 'N6rNabDkT8A1f_aCn3vayEVle2w', '2013-09-17 13:54:58', NULL)[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+
+Sent mail to helloworld@yopmail.com (4ms)
+Date: Tue, 17 Sep 2013 19:24:58 +0530
+from: Survey Registration
+To: helloworld@yopmail.com
+Message-ID: <52385f327b26a_c4844e3b721914d@SSD-16-4F-021.mail>
+Subject: Email Registration
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1>Welcome to Survey</h1>
+    <p>
+      Please click the link below to register: http://localhost:3000/verification/N6rNabDkT8A1f_aCn3vayEVle2w.
+    </p>
+  </body>
+</html>
+Redirected to http://test.host/
+Completed 302 Found in 128ms (ActiveRecord: 1.1ms)
+  [1m[36m (29.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by UsersController#new as HTML
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `users` (`admin`, `created_at`, `email`, `password_hash`, `password_salt`, `registration_token`, `updated_at`, `verified`) VALUES (NULL, '2013-09-17 13:54:58', 'helloworld@yopmail.com', '$2a$10$6PiK0/Qgw.Z5JJhr0ec5IOSJbMH7uSmjZrxnS6iE9gNLfjKMQa.aW', '$2a$10$6PiK0/Qgw.Z5JJhr0ec5IO', '8jQUtb-1gpwusyfQcWe4uf_aN7Y', '2013-09-17 13:54:58', 1)[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'helloworld@yopmail.com' LIMIT 1[0m
+Redirected to http://test.host/
+Completed 302 Found in 113ms (ActiveRecord: 0.3ms)
+  [1m[35m (21.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `users` (`admin`, `created_at`, `email`, `password_hash`, `password_salt`, `registration_token`, `updated_at`, `verified`) VALUES (NULL, '2013-09-17 13:54:58', 'helloworld@yopmail.com', '$2a$10$OFHl3/aX8KV.DIzUlmYE/eG5TJkYC2lpoNnQ5TcoXCKtQZhzmGSnS', '$2a$10$OFHl3/aX8KV.DIzUlmYE/e', '7J-DREWFWTwKcF6qOtJS6GLJR6M', '2013-09-17 13:54:58', 1)
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'helloworld@yopmail.com' LIMIT 1
+Redirected to http://test.host/
+Completed 302 Found in 110ms (ActiveRecord: 0.3ms)
+  [1m[36m (37.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by SessionsController#new as HTML
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Processing by SessionsController#destroy as HTML
+Redirected to http://test.host/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `users` (`admin`, `created_at`, `email`, `password_hash`, `password_salt`, `registration_token`, `updated_at`, `verified`) VALUES (NULL, '2013-09-17 13:54:59', 'helloworld@yopmail.com', '$2a$10$GVuEld6eaYLKwhk7j35T3Oqw30KGaxh1JoyuBuBWi0kc5f7ZasBHi', '$2a$10$GVuEld6eaYLKwhk7j35T3O', 'hrGo5kVkhPqUdz9sSfEJbFSXAzM', '2013-09-17 13:54:59', NULL)[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#verification as HTML
+  Parameters: {"email_token"=>"aaaaaaaaaa"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`registration_token` = 'aaaaaaaaaa' LIMIT 1[0m
+Redirected to http://test.host/sign_up
+Completed 302 Found in 1ms (ActiveRecord: 0.3ms)
+  [1m[35m (24.9ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `users` (`admin`, `created_at`, `email`, `password_hash`, `password_salt`, `registration_token`, `updated_at`, `verified`) VALUES (NULL, '2013-09-17 13:54:59', 'helloworld@yopmail.com', '$2a$10$EoMV4kZeU1i5eVWi7owIrOoow8RjQaENe/WDCJAQUO2X.eUAWyB5C', '$2a$10$EoMV4kZeU1i5eVWi7owIrO', 'UrU30zjasYwf0vEvteNyCXU7upE', '2013-09-17 13:54:59', NULL)
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (21.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mEnquete Load (0.2ms)[0m  SELECT `enquetes`.* FROM `enquetes` WHERE `enquetes`.`published` = 1
+Completed 200 OK in 13ms (Views: 5.0ms | ActiveRecord: 2.1ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mEnquete Load (1.5ms)[0m  SELECT `enquetes`.* FROM `enquetes` WHERE `enquetes`.`published` = 1
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 42ms (Views: 10.8ms | ActiveRecord: 2.3ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+Processing by SessionsController#new as HTML
+Completed 200 OK in 25ms (Views: 24.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `users` (`admin`, `created_at`, `email`, `password_hash`, `password_salt`, `registration_token`, `updated_at`, `verified`) VALUES (NULL, '2013-09-17 13:59:25', 'helloworld@yopmail.com', '$2a$10$tQM0/ry3SeQ/JLuoR.BSKO88no.FYQsrcZCgPaoSVVz0eQDLwLQY6', '$2a$10$tQM0/ry3SeQ/JLuoR.BSKO', '1ol-iwyGkU-zltX1Y0L-UEB3FcU', '2013-09-17 13:59:25', NULL)[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#verification as HTML
+  Parameters: {"email_token"=>"1ol-iwyGkU-zltX1Y0L-UEB3FcU"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`registration_token` = '1ol-iwyGkU-zltX1Y0L-UEB3FcU' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.4ms)[0m  [1mUPDATE `users` SET `verified` = 1, `updated_at` = '2013-09-17 13:59:25' WHERE `users`.`id` = 28[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/log_in
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms)
+  [1m[36m (33.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `users` (`admin`, `created_at`, `email`, `password_hash`, `password_salt`, `registration_token`, `updated_at`, `verified`) VALUES (NULL, '2013-09-17 13:59:25', 'helloworld@yopmail.com', '$2a$10$YzqQ9HAzz0GjveHALKmukecdGewgOcvSdLcxpFHjW6HCxXaQFnXcu', '$2a$10$YzqQ9HAzz0GjveHALKmuke', 'yxHj6bWPkp0k58gBZq0IrCDJYa0', '2013-09-17 13:59:25', NULL)[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#verification as HTML
+  Parameters: {"email_token"=>"1234567890"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`registration_token` = '1234567890' LIMIT 1[0m
+Redirected to http://test.host/sign_up
+Completed 302 Found in 1ms (ActiveRecord: 0.3ms)
+  [1m[35m (23.8ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `users` (`admin`, `created_at`, `email`, `password_hash`, `password_salt`, `registration_token`, `updated_at`, `verified`) VALUES (NULL, '2013-09-17 13:59:25', 'helloworld@yopmail.com', '$2a$10$cGxfayCDWYtwRahLThsTA.mbv3V89h29bSLIdYIpOJ41FUrQdcobu', '$2a$10$cGxfayCDWYtwRahLThsTA.', 'YGx7YYYsvcjAPwEVYs_Q6eT8A8Y', '2013-09-17 13:59:25', 1)
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`email` = 'helloworld@yopmail.com' LIMIT 1
+Redirected to http://test.host/
+Completed 302 Found in 111ms (ActiveRecord: 0.3ms)
+  [1m[36m (25.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (1.1ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`admin`, `created_at`, `email`, `password_hash`, `password_salt`, `registration_token`, `updated_at`, `verified`) VALUES (NULL, '2013-09-17 13:59:25', 'helloworld@yopmail.com', '$2a$10$xwC.06vM/cx2Ut8QRkHbROuKMuVHupyDSbap7pjQm8uQqVI5JIWN2', '$2a$10$xwC.06vM/cx2Ut8QRkHbRO', '-eMxFlj9lyyKi-WoiNPYMOBmZxE', '2013-09-17 13:59:25', 1)[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by SessionsController#create as HTML
+  Parameters: {"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'helloworld@yopmail.com' LIMIT 1[0m
+Redirected to http://test.host/
+Completed 302 Found in 114ms (ActiveRecord: 0.2ms)
+  [1m[35m (28.4ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Processing by SessionsController#destroy as HTML
+Redirected to http://test.host/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Processing by UsersController#new as HTML
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `users` (`admin`, `created_at`, `email`, `password_hash`, `password_salt`, `registration_token`, `updated_at`, `verified`) VALUES (NULL, '2013-09-17 13:59:26', 'helloworld@yopmail.com', '$2a$10$TLJToJXUi9mi7P2qfvuWtOvWaYe7Vpeyx9t1m.CQQIsNFZs4PrlP2', '$2a$10$TLJToJXUi9mi7P2qfvuWtO', 'IQ-WOiT-xn_W0SZzhDyCGI3VAiY', '2013-09-17 13:59:26', NULL)[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+
+Sent mail to helloworld@yopmail.com (43ms)
+Date: Tue, 17 Sep 2013 19:29:26 +0530
+from: Survey Registration
+To: helloworld@yopmail.com
+Message-ID: <5238603e540ac_cc24dacb5a8036@SSD-16-4F-021.mail>
+Subject: Email Registration
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1>Welcome to Survey</h1>
+    <p>
+      Please click the link below to register: http://localhost:3000/verification/IQ-WOiT-xn_W0SZzhDyCGI3VAiY.
+    </p>
+  </body>
+</html>
+Redirected to http://test.host/
+Completed 302 Found in 248ms (ActiveRecord: 0.4ms)
+  [1m[36m (20.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `users` [0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"email"=>"helloworld@yopmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT 1 AS one FROM `users` WHERE `users`.`email` = BINARY 'helloworld@yopmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `users` (`admin`, `created_at`, `email`, `password_hash`, `password_salt`, `registration_token`, `updated_at`, `verified`) VALUES (NULL, '2013-09-17 13:59:26', 'helloworld@yopmail.com', '$2a$10$EEcNYEENUd9OvkOWb3Az/OJ9Sd9/Fcx3V9hDhZFDX1bNimCrXD9y.', '$2a$10$EEcNYEENUd9OvkOWb3Az/O', '0-uNyF13VS3xyBnN85oxeYC-W9Q', '2013-09-17 13:59:26', NULL)
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+
+Sent mail to helloworld@yopmail.com (3ms)
+Date: Tue, 17 Sep 2013 19:29:26 +0530
+from: Survey Registration
+To: helloworld@yopmail.com
+Message-ID: <5238603e7c7e8_cc24dacb5a81bb@SSD-16-4F-021.mail>
+Subject: Email Registration
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1>Welcome to Survey</h1>
+    <p>
+      Please click the link below to register: http://localhost:3000/verification/0-uNyF13VS3xyBnN85oxeYC-W9Q.
+    </p>
+  </body>
+</html>
+Redirected to http://test.host/
+Completed 302 Found in 123ms (ActiveRecord: 1.0ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `users` 
+  [1m[36m (24.1ms)[0m  [1mROLLBACK[0m
