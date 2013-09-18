@@ -20,7 +20,7 @@ Survey::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
-HOST = "http://localhost:3000"
+HOST = "http://secret-earth-5014.herokuapp.com"
   
   #config.action_mailer.smtp_settings = {
   #  address: "relay.jangosmtp.net",
