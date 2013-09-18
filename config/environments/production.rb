@@ -20,6 +20,29 @@ Survey::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
+HOST = "http://localhost:3000"
+  
+  #config.action_mailer.smtp_settings = {
+  #  address: "relay.jangosmtp.net",
+  #  port: 2525,
+  # domain: "localhost.localdomain",
+  #  authentication: "plain",
+  #  user_name: "softwaydev",
+  #  password: "909700FT"
+  # }
+
+config.action_mailer.smtp_settings = {
+    :address              => "smtp.gmail.com",
+    :port                 => 587,
+    :domain               => "localhost.localdomain",
+    :user_name            => "tests.vrk@gmail.com",
+    :password             => "vinu1234",
+    :authentication       => 'plain',
+    :enable_starttls_auto => true
+  }
+
+  config.action_mailer.raise_delivery_errors = true
+
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
 
