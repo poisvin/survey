@@ -8,7 +8,7 @@ class Enquete < ActiveRecord::Base
   has_many :responses, :dependent => :destroy
 
   def self.get_all_published_surveys
-  	find_all_by_published 1
+  	find_all_by_published true
   end
 
 end
