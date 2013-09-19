@@ -28,9 +28,9 @@ gem 'factory_girl_rails'
 gem 'nested_form'
 gem 'bcrypt-ruby', :require => "bcrypt"
 
-# group :production do
-# 	gem 'pg', '0.12.2'
-# end
+group :production do
+	gem 'pg', '0.12.2'
+end
 
 
 # To use ActiveModel has_secure_password
