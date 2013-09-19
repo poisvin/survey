@@ -2,5 +2,7 @@
 
 FactoryGirl.define do
   factory :enquete do
+  	# user
+	sequence(:title) { |n| "name_#{n}" } 	
   end
 end

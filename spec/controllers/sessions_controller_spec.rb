@@ -11,25 +11,23 @@ describe SessionsController do
 
 	describe "On loggin in" do
 		before :each do 
-    	@user = User.create(:email => "helloworld@yopmail.com", :password => "123456", :password_confirmation => "123456", :verified => true)
+    	@user = FactoryGirl.create(:user_login)
 		end
 
     it "should redirect to root url" do
-    	params = {:email => "helloworld@yopmail.com", :password => "123456"}
-      post :create, params
+      post :create, FactoryGirl.attributes_for(:login_credentials)
       response.should redirect_to root_url
     end
 
     it "should have set session variable" do
-    	params = {:email => "helloworld@yopmail.com", :password => "123456"}
-      post :create, params
+      post :create,  FactoryGirl.attributes_for(:login_credentials)
       session[:user_id].should be_eql @user.id
     end
   end
 
   describe "mail verification" do
   	before :each do 
-    	@user = User.create(:email => "helloworld@yopmail.com", :password => "123456", :password_confirmation => "123456")
+      @user = FactoryGirl.create(:user_login)
 		end
 
 		it "should verify and redirect to login" do

@@ -57,7 +57,6 @@ class EnquetesController < ApplicationController
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
-        format.json { render json: @survey.errors, status: :unprocessable_entity }
       end
     end
   end
@@ -65,10 +64,6 @@ class EnquetesController < ApplicationController
   def destroy
     @survey = Enquete.find(params[:id])
     @survey.destroy
-
-    respond_to do |format|
-      format.html { redirect_to surveys_url }
-      format.json { head :no_content }
-    end
+    redirect_to enquetes_url
   end
 end

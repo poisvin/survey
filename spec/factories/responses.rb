@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :response do
-    user nil
-    survey nil
+    user 
+    enquete 
   end
 end
