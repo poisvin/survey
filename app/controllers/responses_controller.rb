@@ -9,6 +9,7 @@ class ResponsesController < ApplicationController
     @survey = Enquete.find_by_id(params[:enquete_id])
     @response = Response.find_by_enquete_id_and_user_id(@survey.id, current_user.id)
     if @response
+      # puts 2323333333333333333
       flash[:notice] = "Survey answered! Please choose another survey."
       redirect_to enquete_response_path(@survey, @response)
     else
@@ -53,6 +54,7 @@ class ResponsesController < ApplicationController
   def destroy
     @response = Response.find(params[:id])
     @response.destroy
-		redirect_to responses_url 
+    redirect_to enquete_responses_url(@survey.id)
+		# redirect_to responses_url
   end
 end

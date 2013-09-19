@@ -5,9 +5,9 @@ class SessionsController < ApplicationController
 
 	def create
 	  user = User.authenticate(params[:email], params[:password])
-	  # raise user.inspect
 	  if user && user.verified
 	    session[:user_id] = user.id
+	    session[:admin] = true if user.admin?
 	    redirect_to root_url, :notice => "Logged in!"
 	  else
 	  	flash[:notice] = user.nil? ? "Email not verified." : "Invalid email or password"
@@ -16,13 +16,12 @@ class SessionsController < ApplicationController
 	end
 
 	def destroy
-	  session[:user_id] = nil
+	  session[:user_id] = session[:admin] = nil
 	  redirect_to root_url, :notice => "Logged out!"
 	end
 
 	def verification
 	  	user = User.verify_email(params[:email_token])
-	  	# raise params.inspect
 	  	if user
 	  		flash[:notice] = "Email verified."  
 	  		redirect_to log_in_path

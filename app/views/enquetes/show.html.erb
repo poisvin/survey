@@ -30,7 +30,7 @@
   </tr>
   <% @survey.responses.each do |response| %>  
     <tr>
-      <td><%#= raise response.user.inspect %></td>
+      <td><%#= raise response.user.email.split'@'[0].inspect %></td>
       <% response.answers.each do |answer| %>
         <td><%= answer.content %></td>
       <% end %>
