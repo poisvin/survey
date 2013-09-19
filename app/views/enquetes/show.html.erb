@@ -8,29 +8,19 @@
   <b>Description:</b>
   <%= @survey.description %>
 </p>
-
-
-<% if @survey.questions.size > 0  %>
-	<b>Questions</b>
-	<ul>
-		<% @survey.questions.each do |question| %>
-			<li><%= question.content %></li>
-		<% end %>
-	</ul>
-<% end %>
 <hr>
 
-<h2>User Responses</h2>
+<h2>Responses</h2>
 <table>
   <tr>
-    <th>User</th>
+    <th>From - Email</th>
     <% @survey.questions.each do |question| %>
       <th><%= question.content %></th>
     <% end %>
   </tr>
   <% @survey.responses.each do |response| %>  
     <tr>
-      <td><%#= raise response.user.email.split'@'[0].inspect %></td>
+      <td><%= response.user.email %></td>
       <% response.answers.each do |answer| %>
         <td><%= answer.content %></td>
       <% end %>
